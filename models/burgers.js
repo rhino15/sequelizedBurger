@@ -4,9 +4,10 @@ module.exports = function(sequelize, DataTypes) {
     burger_name: DataTypes.STRING,
     devoured: { type: DataTypes.BOOLEAN, defaultValue: false }
   }, {
+    tableName: 'burgers',
+
     classMethods: {
       associate: function(models) {
-        // associations can be defined here
       }
     }
   });
