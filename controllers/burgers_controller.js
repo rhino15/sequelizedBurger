@@ -15,7 +15,7 @@ router.get('/', function(req, res) {
 
 router.post('/insertBurgers', function(req, res) {
 	models.Burgers.create({
-		burger_name: req.body.burger_name
+		burger_name: req.body.burger_name,
 	})
 	.then(function() {
 		res.redirect('/');
