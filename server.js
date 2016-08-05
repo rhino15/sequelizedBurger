@@ -3,6 +3,9 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var favicon = require('serve-favicon');
 var path = require('path');
+var db = require('./models');
+
+db.sequelize.sync();
 
 var app = express();
 
